@@ -5,9 +5,10 @@ print()
 j = 0
 while j < 10:
     print('.', end = ' ')
+    j += 1
 print()
 
-d = dict
+d = dict()
 # d = {}
 
 d['nula'] = 0

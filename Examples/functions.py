@@ -1,6 +1,3 @@
-from pickle import GLOBAL
-
-
 PI = 3.14
 
 class Rectangle:
@@ -33,7 +30,8 @@ class Square(Rectangle):
         "Kvadrat"
         Rectangle.__init__(self, a, a) #super().__init(self, a, a)
 
-    #
+    def setB(self, b):
+        pass
 
     def getInscribedCircleArea(self):
         "Vraca povrsinu upisanog kruga"

@@ -32,7 +32,7 @@ def main():
 
     words = loadWords()
 
-    chosenWord = words[random.randint(0, 1000)]
+    chosenWord = words[random.randint(0, 10000)]
     numberOfLetters = len(chosenWord)
     numberOfLettersLeft = numberOfLetters
 
