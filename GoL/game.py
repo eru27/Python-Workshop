@@ -1,10 +1,12 @@
 import inout as io
+import os
 from copy import deepcopy
+from time import sleep
 
 START = "start.txt"
 
-MATRIX_SIZE_1 = 43
-MATRIX_SIZE_2 = 80
+MATRIX_SIZE_1 = 20 # 43
+MATRIX_SIZE_2 = 20 # 80
 
 i_ADD = [-1, -1, -1, 0, 0, 1, 1, 1]
 j_ADD = [-1, 0, 1, -1, 1, -1, 0, 1]
@@ -39,7 +41,9 @@ def main():
                     board1[i][j] = 0
         
         board = deepcopy(board1)
+        os.system('cls')
         io.printBoard(board, MATRIX_SIZE_1, MATRIX_SIZE_2)
+        #sleep(0.5)
         inp = input()
 
 main()
