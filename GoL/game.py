@@ -46,4 +46,5 @@ def main():
         #sleep(0.5)
         inp = input()
 
-main()
+if __name__ == "__main__":
+    main()

@@ -63,4 +63,3 @@ def main():
         print(":( Rec je bila:", chosenWord)
 
 main()
-
