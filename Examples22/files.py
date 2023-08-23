@@ -1,4 +1,4 @@
-FOLDER = 'D:\\ISP\\2022\\PythonWorkshop\\Examples\\'
+FOLDER = 'D:\\ISP\\2022\\PythonWorkshop\\Examples22\\'
 
 
 file1 = open(FOLDER + 'print1.txt', 'w')
