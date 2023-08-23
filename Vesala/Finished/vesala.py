@@ -1,6 +1,6 @@
 import random
 
-LIVES = 5
+LIVES = 10
 
 WORDS = "reci.txt"
 
@@ -44,15 +44,18 @@ def main():
 
     while numberOfLettersLeft > 0 and currentLives > 0:
         printStatus(chosenWord, goodLetters, badLetters, currentLives)
+        print(numberOfLettersLeft)
 
         letter = input()
 
         num = chosenWord.count(letter)
         if num > 0:
-            goodLetters.append(letter)
-            numberOfLettersLeft -= num
+            if letter not in goodLetters:
+                goodLetters.append(letter)
+                numberOfLettersLeft -= num
         else:
-            badLetters.append(letter)
+            if letter not in badLetters:
+                badLetters.append(letter)
             currentLives -= 1
 
     printStatus(chosenWord, goodLetters, badLetters, currentLives)
